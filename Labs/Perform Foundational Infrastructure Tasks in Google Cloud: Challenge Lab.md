@@ -127,9 +127,11 @@ gcloud functions deploy [FUNCTIONS_NAME] \
   
 
 - Upload image to the bucket previously created 
+
 ```
 curl https://storage.googleapis.com/cloud-training/gsp315/map.jpg --output map.jpg
-gsutil cp map.jpg gs://[BUCKET_NAME]```
+gsutil cp map.jpg gs://[BUCKET_NAME]
+```
 
 # Remove access of Username 2 from IAM
 ### Using Google Shell

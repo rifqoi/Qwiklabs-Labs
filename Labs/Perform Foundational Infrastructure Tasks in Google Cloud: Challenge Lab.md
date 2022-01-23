@@ -3,9 +3,9 @@
 - **BUCKET_NAME** provided by Qwiklabs
 
 ```bash 
-gsutil mb -p $GOOGLE_CLOUD_PROJECT 
--c standard 
--l us-east1 
+gsutil mb -p $GOOGLE_CLOUD_PROJECT \
+-c standard \
+-l us-east1 \
 gs://[BUCKET_NAME]
 ```
 
@@ -135,10 +135,11 @@ gsutil cp map.jpg gs://[BUCKET_NAME]
 
 # Remove access of Username 2 from IAM
 ### Using Google Shell
+- Username 2 Email provided by Qwiklabs
 ```
 gcloud projects remove-iam-policy-binding  \
 $GOOGLE_CLOUD_PROJECT \
---member='user:[USERNAME 2 EMAIL]' \
+--member='user:[USERNAME_2]' \
 --role='roles/viewer'
 ```
 ### Using Google Console
